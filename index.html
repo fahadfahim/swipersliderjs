@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Auto Play Slider Js</title>
+</head>
+<body>
+    
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <div class="slide-body">
+                  <div class="imgBx">
+              <img src="./img/10.jpg" alt="">
+            </div>
+            <div class="slide-title">
+                <h3>Explore the world</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi obcaecati perspiciatis nobis iure, nisi minus?</p>
+            </div>
+            </div>
+            </div>
+          <div class="swiper-slide"><img class="swiperimg" src="./img/1.jpg" alt=""></div>
+          <div class="swiper-slide"><img class="swiperimg" src="./img/2.jpg" alt=""></div>
+          <div class="swiper-slide"><img class="swiperimg" src="./img/3.jpg" alt=""></div>
+          <div class="swiper-slide"><img class="swiperimg" src="./img/4.jpg" alt=""></div>
+          <div class="swiper-slide"><img class="swiperimg" src="./img/5.jpg" alt=""></div>
+          <div class="swiper-slide"><img class="swiperimg" src="./img/6.jpg" alt=""></div>
+          <div class="swiper-slide"><img class="swiperimg" src="./img/7.jpg" alt=""></div>
+          <div class="swiper-slide"><img class="swiperimg" src="./img/8.jpg" alt=""></div>
+          <div class="swiper-slide"><img class="swiperimg" src="./img/9.jpg" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    
+
+    <script src="swiper.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
+</body>
+</html>
